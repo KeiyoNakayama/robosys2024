@@ -13,7 +13,7 @@ out=$(seq 5 | ./plus)
 ++ seq 5
 ++ ./plus
 + out=15
-[ "${res}" = 15 ] || "$LINENO"
+[ "${out}" = 15 ] || "$LINENO"
 + '[' 15 = 15 ']'
 
 [ "${res}" = 0 ] && echo OK
