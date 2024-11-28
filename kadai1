@@ -1,0 +1,28 @@
+#!/usr/bin/python3 
+# SPDX-FileCopyrightText: 2024 Keiyo Nakayama
+# SPDX-License-Identifier: BSD-3-Clause
+
+import random
+
+def number_guessing_game(): 
+    ans = random.randint(1,100)
+    attempts = 0
+
+    print("数字を当てて下さい!Guess The Number!（1~100）")
+    
+    while attempts < 100:
+        print("数字を入力してください！")
+        guess = int(input())
+        attempts += 1
+
+        if guess < ans:
+           print("もっと大きいよ！Answer is Bigger!")
+
+        elif guess > ans:
+            print("もっと小さいよ！Answer is Smaller!")
+
+        else:
+            print("正解！挑戦回数:　", attempts)
+            break
+    
+number_guessing_game()       
