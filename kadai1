@@ -1,4 +1,4 @@
-#!/usr/bin/python3 
+#!/usr/bin/python3
 # SPDX-FileCopyrightText: 2024 Keiyo Nakayama
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -10,11 +10,12 @@ def number_guessing_game():
 
     print("数字を当てて!Guess The Number!（1~100）")
     
-    while attempts < 100:
+    while attempts < 20:
         
         print("数字を入力して！")
         guess = int(input())
         attempts += 1
+        
 
         if guess < ans:
            print("もっと大きいよ！Answer is Bigger!")
@@ -34,4 +35,5 @@ def number_guessing_game():
 
         if attempts == 20:
             print("もういい加減にして")
+
 number_guessing_game()       
