@@ -8,10 +8,11 @@ def number_guessing_game():
     ans = random.randint(1,100)
     attempts = 0
 
-    print("数字を当てて下さい!Guess The Number!（1~100）")
+    print("数字を当てて!Guess The Number!（1~100）")
     
     while attempts < 100:
-        print("数字を入力してください！")
+        
+        print("数字を入力して！")
         guess = int(input())
         attempts += 1
 
@@ -24,5 +25,13 @@ def number_guessing_game():
         else:
             print("正解！挑戦回数:　", attempts)
             break
-    
+         
+        if attempts == 8:
+            print("まだ正解できないのお？？お前バカじゃね？wwww You Idiot! HAHAHAHA")
+        
+        if attempts == 15:
+            print("マジで言ってる？？ ")
+
+        if attempts == 20:
+            print("もういい加減にして")
 number_guessing_game()       
