@@ -3,37 +3,24 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 import random
+import sys
 
-def number_guessing_game(): 
+guess = (sys.argv[1])
+def number_guessing_game(guess): 
     ans = random.randint(1,100)
-    attempts = 0
+    guess = int(guess)
 
-    print("数字を当てて!Guess The Number!（1~100）")
-    
-    while attempts < 20:
-        
-        print("数字を入力して！")
-        guess = int(input())
-        attempts += 1
+    print("数字を当てて!Guess The Number!（1~100)")
         
 
-        if guess < ans:
-           print("もっと大きいよ！Answer is Bigger!")
+    if guess < ans:
+        print("もっと大きいよ！Answer is Bigger!正解は{ans}でした")
 
-        elif guess > ans:
-            print("もっと小さいよ！Answer is Smaller!")
+    elif guess > ans:
+        print("もっと小さいよ！Answer is Smaller!正解は{ans}でした")
 
-        else:
-            print("正解！挑戦回数:　", attempts)
-            break
-         
-        if attempts == 8:
-            print("まだ正解できないのお？？お前バカじゃね？wwww You Idiot! HAHAHAHA")
-        
-        if attempts == 15:
-            print("マジで言ってる？？ ")
+    else:
+        print("正解！")
+            
 
-        if attempts == 20:
-            print("もういい加減にして")
-
-number_guessing_game()       
+number_guessing_game(guess)       
