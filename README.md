@@ -16,26 +16,8 @@ $ chmod +x guess_number
 ```
 ## kadai1実行例
 ```shell
-$ ./kadai1
-数字を当てて!Guess The Number!（1~100）
-数字を入力して！
-77
-もっと小さいよ！Answer is Smaller!
-数字を入力して！
-65
-もっと小さいよ！Answer is Smaller!
-数字を入力して！
-43
-もっと小さいよ！Answer is Smaller!
-数字を入力して！
-21
-もっと小さいよ！Answer is Smaller!
-数字を入力して！
-10
-もっと大きいよ！Answer is Bigger!
-数字を入力して！
-17
-正解！挑戦回数:　 6
+$ echo 5 | ./guess_number
+もっと大きいよ！Answer is Bigger!正解は: 65
 ```
 
 ## 著作権・ライセンス
