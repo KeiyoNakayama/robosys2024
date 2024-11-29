@@ -22,7 +22,7 @@ out=$(echo | ./plus)
 
 for i in $(seq 0 100); do
     out=$(echo "$i" | ./kadai1)
-	if [[ "$out" != "正解！挑戦回数: $attempts" ]]; then
+	if [[ "$out" != "正解！挑戦回数: i" ]]; then
 		res = 0
 		[ "$?" = 0 ] || ng "$LINENO"
 		break
