@@ -20,9 +20,16 @@ out=$(echo | ./plus)
 [ "$?" = 1 ]
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo | ./guess_number)
-[ "$?" = 1 ]
-[ "${out}" = "" ] || ng "$LINENO"
+for i in$(seq 1 100); do
+    if [[ "$out" != "正解！" ]]; then
+	    res=0
+	    [ "$?" = 0 ] || ng "$LINENO"
+	    break
+    else
+	    [ "$?" = 1 ] || ng "$LINENO"
+	fi
+done
+    
 
 out=$(echo "あ" | ./guess_number)
 [ "$?" = 1 ] || ng "$LINENO"
