@@ -2,7 +2,7 @@
 千葉工業大学未来ロボティクス学科ロボットシステム学授業・課題用  
 [![test](https://github.com/KeiyoNakayama/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/KeiyoNakayama/robosys2024/actions/workflows/test.yml)
 ## テスト済みの環境
-Ubuntu20.04  
+Ubuntu22.04  
 Python:3.7~3.11
 ## guess_number概要
 ・1～100のランダムな数字を当てるゲームです。  
