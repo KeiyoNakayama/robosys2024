@@ -33,5 +33,11 @@ done
 out=$(echo "あ" | ./guess_number)
 [ "$?" = 1 ] || ng "$LINENO"
 
+out=$(echo "a" | ./guess_number)
+[ "$?" = 1 ] || ng "$LINENO"
+
+out=$(echo "0.1" | ./guess_number)
+[ "$?" = 1 ] || ng "$LINENO"
+
 [ "$res" = 0 ] && echo OK
 exit $res
