@@ -12,7 +12,6 @@ Python:3.7~3.11
 ```shell
 $ git clone https://github.com/KeiyoNakayama/robosys2024.git
 $ cd robosys2024
-$ chmod +x guess_number
 ```
 ## guess_number実行例
 ```shell
