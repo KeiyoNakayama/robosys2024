@@ -21,7 +21,7 @@ out=$(echo | ./plus)
 [ "${out}" = "" ] || ng "$LINENO"
 
 for i in range(101):
-	out=$(echo n)
+	out=$(echo i)
 	[ "$?" = 1 ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK
