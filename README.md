@@ -14,4 +14,4 @@ Pytton:3.7~3.11
 ・挑戦回数が少なくすることを目標
 ## 著作権・ライセンス
 ## 貢献
-[akajaika](https://github.com/akajaika)
+[akajaika](https://github.com/akajaika)千葉工業大学先進工学部未来ロボティクス学科23c1108
