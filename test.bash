@@ -31,5 +31,8 @@ for i in $(seq 1 21); do
 	fi
 done
 
+out=$(echo "あ" | ./kadai1)
+[ "$?" = 1 ] || ng "$LINENO"
+
 [ "$res" = 0 ] && echo OK
 exit $res
