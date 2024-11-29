@@ -23,9 +23,9 @@ out=$(echo | ./plus)
 for i in $(seq 1 100); do
     out=$(echo "$i" | ./guess_number)
     if [[ "$out" != "正解！" ]]; then
-	    res=1
-	    [ "$?" = 0 ] || ng "$LINENO"
-	    break
+	res=1
+	[ "$?" = 0 ] || ng "$LINENO"
+	break
     else
 	    [ "$?" = 1 ] || ng "$LINENO"
 	fi
