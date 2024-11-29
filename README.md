@@ -24,8 +24,7 @@ $ echo 5 | ./guess_number
 - このパッケージのコードの一部は、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです。  
   - https://github.com/ryuichiueda/slides_marp.git  
 - © 2024 Keiyo Nakayama
-## 貢献
-- [akajaika](https://github.com/akajaika)千葉工業大学先進工学部未来ロボティクス学科23c1108
+  
 ## 作者
 Keiyo Nakayama  
 keiyou0206@gmail.com
