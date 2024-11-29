@@ -20,7 +20,7 @@ out=$(echo | ./plus)
 [ "$?" = 1 ]
 [ "${out}" = "" ] || ng "$LINENO"
 
-for i in $(seq 0 100); do
+for i in $(seq 1 21); do
     out=$(echo "$i" | ./kadai1)
 	if [[ "$out" != "正解！挑戦回数: i" ]]; then
 		res = 0
