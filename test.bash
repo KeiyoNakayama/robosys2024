@@ -20,7 +20,7 @@ out=$(echo | ./plus)
 [ "$?" = 1 ]
 [ "${out}" = "" ] || ng "$LINENO"
 
-for i in$(seq 1 100); do
+for i in $(seq 1 100); do
     out=$(echo "$i" | ./guess_number)
     if [[ "$out" != "正解！" ]]; then
 	    res=1
