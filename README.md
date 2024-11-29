@@ -8,7 +8,7 @@ Python:3.7~3.11
 ・1～100のランダムな数字を当てるゲームです。  
 ・100分の1を当てる運を試すゲームです。
 ## 使用準備
-下記のコマンドを使用し、クローンを行ってください。
+下記のコマンドを使用し、クローンを行ってください。a
 ```shell
 $ git clone https://github.com/KeiyoNakayama/robosys2024.git
 $ cd robosys2024
