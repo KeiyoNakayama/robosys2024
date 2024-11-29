@@ -11,6 +11,29 @@ Pytton:3.7~3.11
 $ git clone https://github.com/KeiyoNakayama/robosys2024.git
 $ cd robosys2024
 ```
+## kadai1実行例
+```shell
+$ ./kadai1
+数字を当てて!Guess The Number!（1~100）
+数字を入力して！
+77
+もっと小さいよ！Answer is Smaller!
+数字を入力して！
+65
+もっと小さいよ！Answer is Smaller!
+数字を入力して！
+43
+もっと小さいよ！Answer is Smaller!
+数字を入力して！
+21
+もっと小さいよ！Answer is Smaller!
+数字を入力して！
+10
+もっと大きいよ！Answer is Bigger!
+数字を入力して！
+17
+正解！挑戦回数:　 6
+```
 ## kadai1概要
 ・1～100のランダムな数字を当てるゲーム
 ・挑戦回数が少なくすることを目標
