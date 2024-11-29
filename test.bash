@@ -20,7 +20,7 @@ out=$(echo | ./plus)
 [ "$?" = 1 ]
 [ "${out}" = "" ] || ng "$LINENO"
 
-for i, i<101, i++
+for i in range(101):
 	out=$(echo n)
 	[ "$?" = 1 ] || ng "$LINENO"
 
