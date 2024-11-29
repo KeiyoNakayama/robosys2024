@@ -10,7 +10,7 @@ ng (){
 res=0
 
 out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || "$LINENO"
+[ "${out}" = 15 ] || ng "$LINENO"
 
 out=$(echo あ | ./plus)
 [ "$?" = 1 ]
@@ -20,9 +20,10 @@ out=$(echo | ./plus)
 [ "$?" = 1 ]
 [ "${out}" = "" ] || ng "$LINENO"
 
-for i in range(101):
-	out=$(echo i | ./kadai1)
-	[ "$?" = 1 ] || ng "$LINENO"
+for i in $(seq 0 100); do
+    out=$(echo "$i" | ./kadai1)
+    [ "$?" = 1 ] || ng "$LINENO"
+done
 
 [ "$res" = 0 ] && echo OK
 exit $res
