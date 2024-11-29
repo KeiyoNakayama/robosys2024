@@ -20,18 +20,16 @@ out=$(echo | ./plus)
 [ "$?" = 1 ]
 [ "${out}" = "" ] || ng "$LINENO"
 
-for i in $(seq 1 21); do
-    out=$(echo "$i" | ./kadai1)
-	if [[ "$out" != "正解！挑戦回数: $i" ]]; then
-		res=0
-		[ "$?" = 0 ] || ng "$LINENO"
-		break
-	else
-		[ "$?" = 1 ] || ng "$LINENO"
-	fi
-done
+out=$(echo "$i" | ./guess_number)
+   if [[ "$out" != "正解！挑戦回数: $i" ]]; then
+          res=0
+          [ "$?" = 0 ] || ng "$LINENO"
+   else
+          [ "$?" = 1 ] || ng "$LINENO"
 
-out=$(echo "あ" | ./kadai1)
+
+
+out=$(echo "あ" | ./guess_number)
 [ "$?" = 1 ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK
