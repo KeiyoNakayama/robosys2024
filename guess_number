@@ -5,22 +5,19 @@
 import random
 import sys
 
-guess = (sys.argv[1])
-def number_guessing_game(guess):
+guess = sys.stdin
+
+for guess in sys.stdin:
+
     ans = random.randint(1,100)
-    guess = int(guess)
 
-    print("数字を当てて!Guess The Number!（1~100)")
-
-
-    if guess < ans:
+    
+    if guess < str(ans):
         print("もっと大きいよ！Answer is Bigger!正解は:",ans)
 
-    elif guess > ans:
+    elif guess > str(ans):
         print("もっと小さいよ！Answer is Smaller!正解は:",ans)
 
-    else:
+    elif guess == str(ans):
         print("正解！")
 
-
-number_guessing_game(guess)
