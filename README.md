@@ -14,7 +14,7 @@ $ git clone https://github.com/KeiyoNakayama/robosys2024.git
 $ cd robosys2024
 $ chmod +x guess_number
 ```
-## kadai1実行例
+## guess_number実行例
 ```shell
 $ echo 5 | ./guess_number
 もっと大きいよ！Answer is Bigger!正解は: 65
