@@ -13,13 +13,13 @@ for guess in sys.stdin:
     ans = random.randint(1,100)
 
     if guess < int(ans):
-        print("もっと大きいよ！Answer is Bigger!正解は:",ans)
+        print("もっと大きいよ! Answer is Bigger!正解は:",ans)
 
     elif guess > int(ans):
-        print("もっと小さいよ！Answer is Smaller!正解は:",ans)
+        print("もっと小さいよ! Answer is Smaller!正解は:",ans)
 
     elif guess == int(ans):
-        print("正解！")
+        print("正解! ")
 
 
 

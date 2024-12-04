@@ -9,17 +9,6 @@ ng (){
 
 res=0
 
-out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng "$LINENO"
-
-out=$(echo あ | ./plus)
-[ "$?" = 1 ]
-[ "${out}" = "" ] || ng "$LINENO"
-
-out=$(echo | ./plus)
-[ "$?" = 1 ]
-[ "${out}" = "" ] || ng "$LINENO"
-
 for i in $(seq 1 100); do
     out=$(echo "$i" | ./guess_number)
     if [ "$?" != 0]; then
