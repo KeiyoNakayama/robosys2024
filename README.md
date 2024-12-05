@@ -15,8 +15,8 @@ $ cd robosys2024
 ```
 ## guess_number実行例
 ```shell
-$ echo 5 | ./guess_number
-もっと大きいよ！Answer is Bigger!正解は: 65
+$ echo 6 | ./guess_number
+もっと大きいよ! Answer is Bigger!正解は: 71
 ```
 
 ## 著作権・ライセンス
