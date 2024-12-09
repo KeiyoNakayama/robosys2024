@@ -11,7 +11,7 @@ res=0
 
 for i in $(seq 1 100); do
     out=$(echo "$i" | ./guess_number)
-    if [ "$?" != 0]; then
+    if [ "$?" != 0 ]; then
 	res=1
 	[ "$?" = 0 ] || ng "$LINENO"
 	break
